@@ -76,7 +76,6 @@ footer {
     color: white;
     text-align: center;
     padding: 10px;
-    position: fixed;
     width: 100%;
     bottom: 0;
 }
@@ -84,4 +83,9 @@ footer {
 div {
     color: rgb(68, 60, 60);
     background-color: rgb(217, 189, 189);
+}
+
+img{
+  width: 200px;
+  height: 200px;  
 }
