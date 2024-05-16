@@ -1,14 +1,18 @@
-alert('Welcome GoPassion!')
-let age = 13;
-const birthYear = 2011;
+// script.js
+function findPassion() {
+  const interests = document.getElementById('interests').value.split(',').map(item => item.trim());
+  const activities = document.getElementById('activities').value.split(',').map(item => item.trim());
+  const skills = document.getElementById('skills').value.split(',').map(item => item.trim());
 
-console.log("Minimum Age to use the page", age)
-console.log('you can use this page if you were born before this year:', birthYear)
 
-if (age >= 13){
-    console.log('Eligible to use this website.');
- } else {
-  console.log('Uneligible to use this website - come back later!')
+  const allInputs = [...interests, ...activities, ...skills];
+  const uniqueInputs = Array.from(new Set(allInputs));
+  const recommendations = uniqueInputs.filter(input => input.length > 0);
+
+  const resultElement = document.getElementById('result');
+  if (recommendations.length > 0) {
+      resultElement.innerText = `Based on your inputs, you might be passionate about: ${recommendations.join(', ')}.`;
+  } else {
+      resultElement.innerText = 'Please enter some interests, activities, or skills to get recommendations.';
+  }
 }
-
-parseInt(document.getElementById("output"))

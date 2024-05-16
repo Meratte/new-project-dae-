@@ -3,11 +3,79 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome to the new style of learning</title>
-
+    <title>Find Your Passion</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-      <li><a href='index.html'> Home</a></li>
-      
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg">
+        <a class="navbar-brand" href="index.html">GoPassion</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#how-it-works">How It Works</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <header id="home" class="header text-center">
+        <h1>Welcome to GoPassion</h1>
+        <p>Discover your passion with our interactive tool!</p>
+    </header>
+
+    <!-- Main Content Section -->
+    <main class="container mt-4">
+        <section id="about" class="introduction">
+            <h2>Introduction</h2>
+            <p>GoPassion provides a range of resources for individuals looking to find their passion. Our interactive tool will guide you through various fields and help you discover what truly excites you.</p>
+        </section>
+
+        <section id="how-it-works" class="how-it-works">
+            <h2>How It Works</h2>
+            <p>Our tool asks a series of questions about your interests and preferences. Based on your answers, we provide personalized recommendations for fields you might be passionate about.</p>
+        </section>
+
+        <section class="interactive-demo">
+            <h2>Interactive Demo</h2>
+            <form id="passionForm">
+                <div class="form-group">
+                    <label for="interests">What are your interests?</label>
+                    <input type="text" class="form-control" id="interests" name="interests" placeholder="e.g., Art, Technology, Sports">
+                </div>
+                <div class="form-group">
+                    <label for="activities">What activities do you enjoy?</label>
+                    <input type="text" class="form-control" id="activities" name="activities" placeholder="e.g., Painting, Coding, Running">
+                </div>
+                <div class="form-group">
+                    <label for="skills">What skills do you have?</label>
+                    <input type="text" class="form-control" id="skills" name="skills" placeholder="e.g., Drawing, Problem-solving, Teamwork">
+                </div>
+                <button type="button" class="btn btn-primary" onclick="findPassion()">Find My Passion</button>
+            </form>
+            <p id="result" class="mt-4"></p>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer id="contact" class="footer text-center">
+        <p>&copy; 2024 GoPassion</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>

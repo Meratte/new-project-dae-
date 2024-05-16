@@ -3,59 +3,77 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="style.css" rel='stylesheet' type="text/css"/>
-    
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet" type="text/css">
     <title>GoPassion!</title>
 </head>
 <body>
-    <header>
-  <h1>Go passion!</h1>
-</header>
-  <p>Go passion provides a lot of resources for people 
-    who might not know what they want to do in the future.
-    We will present you articles and fun facts about different paths you can take 
-    and you get to choose whether you want to continue learning it or do something else!
-  </p>
-  <section>
-    <header>
-  <h1>Why should you use us? </header>
-    <ul>
-    <li>We are non-profit organization that tries to 
-        help students choose the <em>right</em> track for them
-    </li>
-    <li>Do you know that according to LinkedIn, 75 percent of 25-33 year olds don't know what their dream job is?</li>
-</ul>
-    <h4>so, if you're a teen or someone who's in their early-mid 20s, you should consider using our product! now go and explore different  <em>passions!</em></h4>
-</h1>  
-</section>
-<div>You got here because you have these many <strong>passions</strong>, but you don't know which one is going to be sustainable over time,
-what's the job market is like for this and most importantly - how do you <em>choose one?</em></div>
-<div>Our product offers it all - type one job and get an output on research articles, salaries and requirements for the job! And, if you're hungry for even more, you can also explore other careers that will be mapped with one of your passions</div>
-<div>Let's say that you're interested in the arts - you can choose it as a passion and get a list of careers as well as resources to how <strong>you</strong> can get there. If for whatever reason you decide not to explore it further (our quizzez won't do good or you get bored) you can always change it 
-    and focus on one passion at a time!</div>
-  <header>
-  <h1> Demo of our product! </h1>
-  </header>
-  <p>Modeled with help of Large Language Models, we provide you with
-    our own machine girl - Gesa! She'll be your assistant and will help you with 
-    navigating through the passions so you can choose one you like and explore it!
-  </p>
-  <a href="GoPassion.html">
-  <button>Take me on the journey!</button>
-</a>
-<br></br>
-<footer>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg">
+        <a class="navbar-brand" href="#">GoPassion</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="GoPassion.html#how-it-works">How It Works</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="GoPassion.html#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
 
-    <li><a href='about.html'> 
-        <h7>Why did I create this?</h7></a></li>
-    <p><br>line break is </br></p>
-    <p>strong paragraph is <strong>strong</strong></p>
-    <p>hi the italic is <em>em</em></p>
-    <p>i'm a <button>button</button></p>
-    
-    <h1>LIST TAGS:</h1>
-    <li>li for multiple lists</li>
-</footer>
-<script src="script.js"></script>
+    <!-- Header -->
+    <header class="text-center">
+        <h1>GoPassion!</h1>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mt-4">
+        <p class="lead">GoPassion provides a lot of resources for people who might not know what they want to do in the future. We will present you with articles and fun facts about different paths you can take, and you get to choose whether you want to continue learning it or do something else!</p>
+        <section class="my-4">
+            <h2>Why should you use us?</h2>
+            <ul class="list-unstyled">
+                <li class="my-2">We are a non-profit organization that tries to help students choose the <em>right</em> track for them.</li>
+                <li class="my-2">Do you know that according to LinkedIn, 75 percent of 25-33 year olds don't know what their dream job is?</li>
+            </ul>
+            <h4>So, if you're a teen or someone who's in their early-mid 20s, you should consider using our product! Now go and explore different <em>passions!</em></h4>
+        </section>
+        <div class="my-4">
+            You got here because you have these many <strong>passions</strong>, but you don't know which one is going to be sustainable over time, what the job market is like for this, and most importantly - how do you <em>choose one?</em>
+        </div>
+        <div class="my-4">
+            Our product offers it all - type one job and get an output on research articles, salaries, and requirements for the job! And, if you're hungry for even more, you can also explore other careers that will be mapped with one of your passions.
+        </div>
+        <div class="my-4">
+            Let's say that you're interested in the arts - you can choose it as a passion and get a list of careers as well as resources on how <strong>you</strong> can get there. If for whatever reason you decide not to explore it further (our quizzes won't do good or you get bored) you can always change it and focus on one passion at a time!
+        </div>
+        <section class="my-4">
+            <h2>Demo of our product!</h2>
+            <p>Modeled with the help of Large Language Models, we provide you with our own machine girl - Gesa! She'll be your assistant and will help you navigate through the passions so you can choose one you like and explore it!</p>
+            <a href="GoPassion.html" class="btn btn-primary">Take me on the journey!</a>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="text-center">
+        <ul class="list-inline">
+            <li class="list-inline-item"><a href='about.html'>Why did I create this?</a></li>
+        </ul>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
